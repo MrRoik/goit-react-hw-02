@@ -1,0 +1,17 @@
+.containerOptions {
+    display: inline-flex;
+    gap: 8px;
+    margin-bottom: 22px;
+}
+
+.btnGood:hover {
+    background-color: #1eff00;
+}
+
+.btnNeutral:hover {
+    background-color: #e5ff00;
+}
+
+.btnBad:hover {
+    background-color: #ff3c00;
+}
