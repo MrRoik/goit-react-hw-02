@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Description } from './Description/Description';
 import { Options } from './Options/Option';
 import { Feedback } from './Feedback/Feedback';
@@ -12,20 +12,20 @@ export const App = () => {
     bad: 0
   });
 
-  const [clicks, setClicks] = useState(0);
-  /*const [clicks, setClicks] = useState(() => {
+  //const [clicks, setClicks] = useState(0);
+  const [clicks, setClicks] = useState(() => {
     const savedClicks = window.localStorage.getItem("saved-clicks");
     if (savedClicks !== null) {
-      return Number(savedClicks);
+      return JSON.parse(savedClicks);
     }
     return 0;
   });
 
   useEffect(() => {
-    window.localStorage.setItem("saved-clicks", clicks);
-  }, [clicks]);*/
+      window.localStorage.setItem("saved-clicks", JSON.stringify({ values }));
+  }, [values]);
 
-  const onUpdateFeedback = (option) => {
+  const onUpdateFeedback = option => {
     setValues({
       ...values,
       [option]: values[option] + 1

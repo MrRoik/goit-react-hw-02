@@ -6,9 +6,9 @@ import { BsEmojiFrown } from "react-icons/bs";
 export const Options = ({onUpdate, isHidden, onReset}) => {
     return (
         <div className={css.containerOptions}>
-            <button onClick={() => onUpdate("good")} name="good" className={css.btnGood}><BsEmojiHeartEyes />  Good</button>
-            <button onClick={() => onUpdate("neutral")} name="neutral" className={css.btnNeutral}><BsEmojiNeutral />  Neutral</button>
-            <button onClick={() => onUpdate("bad")} name="bad" className={css.btnBad}><BsEmojiFrown /> Bad</button>
+            <button onClick={() => onUpdate("good")} className={css.btnGood}><BsEmojiHeartEyes />  Good</button>
+            <button onClick={() => onUpdate("neutral")} className={css.btnNeutral}><BsEmojiNeutral />  Neutral</button>
+            <button onClick={() => onUpdate("bad")} className={css.btnBad}><BsEmojiFrown /> Bad</button>
             {!isHidden && <button onClick={onReset}>Reset</button>}
         </div>
     )
