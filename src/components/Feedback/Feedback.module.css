@@ -8,3 +8,18 @@
     font-size: 18px;
     font-weight: 500;
 }
+.listItemGood {
+    color: green;
+}
+.listItemNeutral {
+    color: rgb(204, 116, 0);
+}
+.listItemBad {
+    color: rgb(136, 5, 5);
+}
+.listItemTotal {
+    color: rgb(22, 5, 180);
+}
+.listItemPositive {
+    color: rgb(99, 0, 119);
+}

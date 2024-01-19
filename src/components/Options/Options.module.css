@@ -3,6 +3,26 @@
     gap: 8px;
     margin-bottom: 22px;
 }
+.btnGood {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: green;
+}
+
+.btnNeutral {
+    display: flex;
+    align-items: center;
+    gap: 10px;    
+    color: rgb(204, 116, 0);
+}
+
+.btnBad {
+    display: flex;
+    align-items: center;
+    gap: 10px;    
+    color: rgb(136, 5, 5);
+}
 
 .btnGood:hover {
     background-color: #1eff00;

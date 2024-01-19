@@ -50,7 +50,6 @@
     height: auto;
   }
   
-  
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -60,11 +59,14 @@ button {
   font-family: inherit;
   background-color: #d4d4d4;
   cursor: pointer;
-  transition: border-color 0.25s;
   transition: all 0.3s ease;
 }
+
 button:hover {
-  border-color: #3fe6fc;
+  
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
 }
 button:focus,
 button:focus-visible {
